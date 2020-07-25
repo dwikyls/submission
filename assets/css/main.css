@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@font-face {
+    font-family: "Nexa Bold";
+    src: url('\assets\fonts\Nexa\Bold.otf');
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(to right, black, #130452, #240899);
+    z-index: 4;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+header section{
+    height: 100%;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+header section h1 a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    font-family: monospace;
+}
+header nav{
+    height: 100%;
+    width: 75%;
+    float: left;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    margin-left: 40px;
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a:hover {
+    font-weight: bold;
+}
+main {
+    padding: 50px 0px 0px 0px;
+    overflow: auto;
+}
+#content {
+    width: 100%;
+    height: 80%;
+}
+.container1{
+    float: right;
+}
+.container1 p{
+    font-family: Dense;
+    font-size: 30px;
+    line-height: 0;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.flex-row a{
+    text-decoration: none;
+    color: white;
+}
+.flex-row a:hover{
+    font-weight: bold;
+}
+.box{
+    flex-grow: 1;
+    margin: 5px;
+    border-radius: 10px;
+}
+#home{
+    padding: 105px;
+    color: white;
+    background: linear-gradient(to right, black, #130452, #240899);
+    height: 20%;
+}
+#about{
+    text-align: center;
+    height: 20%;
+}
+#works{
+    text-align: center;
+    color: white;
+    height: 20%;
+    background: linear-gradient(to right, black, #130452, #240899);
+}
+#contact{
+    text-align: center;
+    height: 20%;
+}
+aside {
+    height: 20%;
+    top: 0;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to right, black, #130452, #240899);
+    text-align: center;
+    font-weight: bold;
+}
+.bg{
+    top: 70px;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+.pp{
+    z-index: 3;
+    position: relative;
+}
+.clear{
+    clear: right;
+}
+.border{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1000px){
+    #content,
+    aside,
+    .flex-column{
+        width: 100%;
+        padding: 0;
+    }
+    #home{
+        padding: 50px 10px 20px 10px;
+    }
+    .bg{
+        background-position: right 42% top;
+    }
+    nav {
+        padding: 5px;
+        position: sticky;
+        top: 0;
+    }
+    nav li{
+        margin-left: 10px;
+    }
+}

@@ -5,135 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dwiky Suhardianto</title>
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Quicksand', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            margin: 0 auto;
-            height: 50px;
-            width: 100%;
-            position: fixed;
-            background-color: teal;
-            color: white;
-        }
-        header section{
-            height: 100%;
-            width: 25%;
-            float: left;
-            text-align: center;
-        }
-        header section h1 a{
-            text-decoration: none;
-            color: white;
-            position: absolute;
-            top: 10px;
-            text-align: center;
-        }
-        header nav{
-            height: 100%;
-            width: 75%;
-            float: left;
-            text-align: center;
-        }
-        nav li{
-            display: inline;
-            margin-left: 40px;
-        }
-        nav a {
-            color: white;
-            font-size: 18px;
-            font-weight: 400;
-            text-decoration: none;
-        }
-        main {
-            padding: 70px 20px 20px 20px;
-            overflow: auto;
-        }
-        #content {
-            width: 100%;
-            height: 75%;
-        }
-        aside {
-            width: 100%;
-            height: 25%;
-        }
-        #home image{
-            float: left;
-        }
-        .container1{
-            float: right;
-        }
-        .flex-column {
-            display: flex;
-            flex-direction: column;
-            width: 600px;
-            height: 250px;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-        .flex-row {
-            display: flex;
-            flex-direction: row;
-            flex-grow: 1;
-            text-align: center;
-            padding: 20px;
-            margin: 5px;
-            border-radius: 10px;
-        }
-        .flex-row a{
-            text-decoration: none;
-            color: teal;
-        }
-        .box{
-            flex-grow: 1;
-            margin: 5px;
-            border-radius: 10px;
-        }
-        #home{
-            background: url('D:\Program Files\XAMPP\htdocs\submission-dwikysuhardianto\assets\img\2.png');
-            height: 25%;
-        }
-        #about{
-            height: 25%;
-        }
-        #works{
-            height: 25%;
-        }
-        #contact{
-            height: 25%;
-        }
-        footer {
-            padding: 20px;
-            color: white;
-            background-color: #00a2c6;
-            text-align: center;
-            font-weight: bold;
-        }
-        @media screen and (max-width: 1000px){
-            #content,
-            aside,
-            .flex-column{
-                width: 100%;
-                padding: 0;
-            }
-            nav {
-                padding: 5px;
-                position: sticky;
-                top: 0;
-            }
-            nav li{
-                margin-left: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <header>
@@ -152,12 +25,14 @@
     <main>
         <div id="content">
             <article id="home">
-                <section>
+                <div class="bg"><img src="assets/img/2.png" alt="" srcset=""></div>
+                <section class="pp">
                     <img src="assets/img/a.png" alt="">
                     <div class="container1">
                         <p>Hallo</p>
                         <p>I am Dwiky</p>
-                        <p>I am a Junior Web Developer. i am looking for remote job based in Surabaya</p>
+                        <p>I am a Junior Web Developer.</p>
+                        <p>i am looking for remote job based in Surabaya</p>
                         <div class="flex-column">
                             <div class="flex-row">
                                 <div class="box"><a href="https://fb.com/dwikyls"><i class="fab fa-youtube fa-2x"></i></a></div>
@@ -166,11 +41,12 @@
                                 <div class="box"><a href="https://github.com/dwikyls"><i class="fab fa-github fa-2x"></i></a></div>
                             </div>
                             <div class="flex-row">
-                                <div class="box button"><a href="assets/file/CV-DwikySuhardianto.pdf"><i class="fa fa-download"></i> Download CV</a></div>
-                                <div class="box button"><a href=""><i class="fa fa-download"></i> Download Resume</a></div>
+                                <div class="box"><a href="assets/file/CV-DwikySuhardianto.pdf" class="border"><i class="fa fa-download"></i> Download CV</a></div>
+                                <div class="box"><a href="assets/file/CV-DwikySuhardianto.pdf" class="border"><i class="fa fa-download"></i> Download Resume</a></div>
                             </div>
                         </div>
                     </div>
+                    <div class="clear"></div>
                 </section>
             </article>
             <article id="about">
@@ -205,13 +81,23 @@
             <article id="works">
                 <h1>My Project</h1>
                 <section>
-                    <h3></h3>
+                    <h3>You can see my project here:</h3>
+                    <div class="flex-column">
+                        <div class="flex-row">
+                            <div class="box"><a href="https://fb.com/dwikyls"><i class="fab fa-youtube fa-2x"></i></a></div>
+                            <div class="box"><a href="https://youtube.com/dwikyls"><i class="fab fa-facebook fa-2x"></i></a></div>
+                            <div class="box"><a href="https://instagram.com/dwiky"><i class="fab fa-instagram fa-2x"></i></a></div>
+                            <div class="box"><a href="https://github.com/dwikyls"><i class="fab fa-github fa-2x"></i></a></div>
+                        </div>
+                    </div>
+                    <h3>OR</h3>
+                    <a href="dsc29feb.web.app">Here<i fa-arrow></i></a>
                 </section>
             </article>
             <article id="contact">
                 <h1>Contact</h1>
                 <section>
-                    <h3>You can find me</h3>
+                    <h3>If you need more information please call me at:</h3>
                     <p>Email: dwikysuhardianto@gmail.com</p>
                     <p>Telp : 081233708472</p>
                 </section>
