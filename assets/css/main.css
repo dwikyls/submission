@@ -13,11 +13,10 @@ body {
 header{
     z-index: 4;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 100%;
     position: fixed;
-    color: white;
-    background-color: #240899;
+    background-color: #ff5a00;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
@@ -29,13 +28,13 @@ header section{
 }
 header section h1 a{
     text-decoration: none;
-    color: white;
-    position: absolute;
-    top: 10px;
+    color: #240899;
+    font-weight: bolder;
     text-align: center;
     font-family: monospace;
 }
 header nav{
+    padding: 14px 0px 0px 120px;
     height: 100%;
     width: 75%;
     float: left;
@@ -48,7 +47,7 @@ nav li{
 nav a {
     color: white;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -68,7 +67,7 @@ main {
     text-align: justify;
     padding-right: 20px;
 }
-.container1 p{
+.text{
     font-family: Dense;
     font-size: 30px;
     line-height: 0;
@@ -103,41 +102,43 @@ main {
     border-radius: 10px;
 }
 #home{
-    background-color: #240899;
     color: white;
     height: 20%;
-    padding: 50px 20px 200px 20px;
+    padding: 50px 20px 0px 20px;
 }
 #about{
-    padding: 20px;
+    padding: 20px 100px;
     height: 20%;
     background-color: cadetblue;
     color: white;
 }
 #works{
-    text-align: center;
+    text-align: justify;
+    padding: 20px 100px;
     height: 20%;
 }
 #contact{
-    text-align: center;
-    height: 20%;
-    background-color: cadetblue;
+    text-align: justify;
+    background-color: #ff5a00;
     color: white;
+    height: 20%;
+    padding: 20px 100px;
 }
 aside {
+    padding: 20px 100px;
     height: 20%;
     top: 0;
 }
 footer {
     padding: 20px;
     color: white;
-    background: linear-gradient(to right, black, #130452, #240899);
+    background: #ff5a00;
     text-align: center;
     font-weight: bold;
 }
 .bg{
     width: 100%;
-    top: 0px;
+    top: 0;
     left: 0;
     position: absolute;
     z-index: 2;
@@ -155,10 +156,53 @@ footer {
     padding: 20px;
     margin-top: 20px;
  }
+ .dwnld{
+    font-family: fantasy;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ .input{
+     width: 100%;
+     padding: 20px;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+ }
 .border{
-    border: 1px solid white;
     padding: 20px;
     border-radius: 20px;
+}
+.tentang p{
+    text-align: justify;
+}
+.container3{
+    display: flex;
+}
+.box3{
+    flex-grow: 1;
+}
+.box3 a img{
+    opacity: 0.8;
+}
+.box3 a img:hover{
+    opacity: 1;
+}
+.box3 button{
+    width: 100%;
+    color: white;
+    background-color: #240899;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box3 button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.column{
+    flex-direction: column;
 }
 @media screen and (max-width: 1000px){
     #content,
@@ -172,7 +216,8 @@ footer {
         text-align: center;
     }
     .container1{
-        padding-right: 30px;
+        text-align: center;
+        padding-right: 20px;
     }
     .bg{
         background-position: right 42% top;
