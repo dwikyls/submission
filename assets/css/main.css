@@ -3,41 +3,44 @@
     font-family: "Nexa Bold";
     src: url('\assets\fonts\Nexa\Bold.otf');
 }
+@font-face {
+    font-family: "Simplifica";
+    src: url('\assets\fonts\Nexa\Simplifica.ttf');
+}
+@font-face {
+    font-family: "Dense";
+    src: url('\assets\fonts\Nexa\Dense.otf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
 body {
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
 }
 header{
-    z-index: 4;
     margin: 0 auto;
-    padding-bottom: 10px;
     width: 100%;
     position: fixed;
-    background-color: #ff5a00;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
 }
 header section{
-    height: 100%;
-    width: 25%;
-    float: left;
     text-align: center;
 }
 header section h1 a{
     text-decoration: none;
-    color: #240899;
+    color: #65b6eb;
     font-weight: bolder;
     text-align: center;
     font-family: monospace;
 }
 header nav{
-    padding: 14px 0px 0px 120px;
-    height: 100%;
-    width: 75%;
-    float: left;
     text-align: center;
 }
 nav li{
@@ -45,7 +48,7 @@ nav li{
     margin-left: 40px;
 }
 nav a {
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 900;
     text-decoration: none;
@@ -53,32 +56,26 @@ nav a {
 }
 nav a:hover {
     font-weight: bold;
+    color: #65b6eb;
 }
 main {
-    padding: 50px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     overflow: auto;
 }
 #content {
     width: 100%;
     height: 80%;
 }
-.container1{
-    float: right;
-    text-align: justify;
-    padding-right: 20px;
-}
 .text{
     font-family: Dense;
     font-size: 30px;
     line-height: 0;
-    padding-left: 60px;
 }
 .flex-column {
     display: flex;
     flex-direction: column;
     width: 600px;
     height: 250px;
-    margin: 0 auto;
     border-radius: 10px;
 }
 .flex-row {
@@ -86,7 +83,6 @@ main {
     flex-direction: row;
     flex-grow: 1;
     text-align: center;
-    margin: 5px;
     border-radius: 10px;
 }
 .flex-row a{
@@ -102,14 +98,14 @@ main {
     border-radius: 10px;
 }
 #home{
-    color: white;
+    padding: 70px;
+    background-color: #ebf4f1;
     height: 20%;
-    padding: 50px 20px 0px 20px;
 }
 #about{
-    padding: 20px 100px;
+    padding: 100px;
     height: 20%;
-    background-color: cadetblue;
+    background-color: #65b6eb;
     color: white;
 }
 #works{
@@ -119,7 +115,7 @@ main {
 }
 #contact{
     text-align: justify;
-    background-color: #ff5a00;
+    background-color: #65b6eb;
     color: white;
     height: 20%;
     padding: 20px 100px;
@@ -132,23 +128,9 @@ aside {
 footer {
     padding: 20px;
     color: white;
-    background: #ff5a00;
+    background: #2f87ad;
     text-align: center;
     font-weight: bold;
-}
-.bg{
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 2;
-}
-.pp{
-    z-index: 3;
-    position: relative;
-}
-.clear{
-    clear: right;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -158,8 +140,9 @@ footer {
  }
  .dwnld{
     font-family: fantasy;
-    background-color: white;
+    background-color: #65b6eb;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 2px 1px grey;
  }
  .input{
      width: 100%;
@@ -168,6 +151,9 @@ footer {
      border: none;
      outline: none;
  }
+.clr2{
+    color: #65b6eb;
+}
 .border{
     padding: 20px;
     border-radius: 20px;
@@ -181,16 +167,10 @@ footer {
 .box3{
     flex-grow: 1;
 }
-.box3 a img{
-    opacity: 0.8;
-}
-.box3 a img:hover{
-    opacity: 1;
-}
 .box3 button{
     width: 100%;
     color: white;
-    background-color: #240899;
+    background-color: #2f87ad;
     border-radius: 10px;
     outline: none;
     border: none;
@@ -201,34 +181,84 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
+.box3 p button{
+    padding: 5px;
+    width: 50%;
+}
+.box3 p a{
+    text-decoration: none;
+    color: #2f87ad;
+}
+table{
+    text-align: justify;
+}
+table tr th, table tr td{
+    padding: 10px;
+}
 .column{
     flex-direction: column;
 }
+.d{
+    font-family: Simplifica;
+}
+.dd{
+    font-size: 70px; font-weight: bolder;
+}
+.ddd{
+    font-size: 40px; font-weight: 300;
+}
 @media screen and (max-width: 1000px){
+    #about,
+    #works,
     #content,
     aside,
+    #contact,
     .flex-column{
         width: 100%;
+        text-align: center;
         padding: 0;
     }
-    #home{
-        padding: 50px 10px 20px 10px;
-        text-align: center;
-    }
-    .container1{
-        text-align: center;
-        padding-right: 20px;
-    }
-    .bg{
-        background-position: right 42% top;
-    }
-    
-    nav {
-        padding: 5px;
-        position: sticky;
-        top: 0;
-    }
     nav li{
-        margin-left: 10px;
+        margin-left: 0;
+    }
+    nav li ul a{
+        font-size: 10px;
+        
+    }
+    #home{
+        padding: 0;
+    }
+    .dd{
+        font-size: 60px;
+    }
+    .img{
+        padding: 0;
+        margin-top: 100px;
+        width: 300px;
+    }
+    .container3{
+        flex-direction: column;
+        width: 100%;
+    }
+    #about, #contact, #works{
+        padding: 10px;
+        text-align: justify;
+    }
+    h1,h3,h4{
+        text-align: center;
+    }
+    .border{
+        padding: 10px;
+    }
+    table{
+        text-align: justify;
+    }
+    .box3 p button{
+        padding: 5px;
+        width: 75%;
+    }
+    .geser{
+        margin-left: 50px;
+        margin-bottom: 10px;
     }
 }
