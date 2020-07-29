@@ -23,6 +23,11 @@ body {
     margin: 0;
     padding: 0;
 }
+.dddd{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
 header{
     margin: 0 auto;
     width: 100%;
@@ -189,11 +194,23 @@ footer {
     text-decoration: none;
     color: #2f87ad;
 }
+.box3 .card a img:hover{
+    width: 98%;
+}
 table{
+    width: 100%;
     text-align: justify;
 }
-table tr th, table tr td{
+table tr th{
     padding: 10px;
+    text-align: right;
+    width: 10%;
+}
+
+table tr td{
+    text-align: left;
+    padding: 10px;
+    width: 90%;
 }
 .column{
     flex-direction: column;
@@ -223,13 +240,15 @@ table tr th, table tr td{
     }
     nav li ul a{
         font-size: 10px;
-        
     }
     #home{
         padding: 0;
     }
     .dd{
-        font-size: 60px;
+        font-size: 30px;
+    }
+    .ddd{
+        font-size: 25px;
     }
     .img{
         padding: 0;
@@ -258,7 +277,17 @@ table tr th, table tr td{
         width: 75%;
     }
     .geser{
-        margin-left: 50px;
+        margin-left: 0px;
         margin-bottom: 10px;
+    }
+    .geser2{
+        padding-right: 30px;
+    }
+    table tr th{
+        width: 40%;
+    }
+    
+    table tr td{
+        width: 60%;
     }
 }
